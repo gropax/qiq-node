@@ -10,7 +10,8 @@
   },
 
   "scripts": {
-    "start": "concurrently \"npm run tsc:w\" \"npm run lite\" ",    
+    "start": "npm run lite",    
+    "start:dev": "concurrently \"npm run tsc:w\" \"npm run lite\" ",    
     "tsc": "tsc",
     "tsc:w": "tsc -w",
     "lite": "lite-server",
